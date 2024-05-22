@@ -1,0 +1,14 @@
+{
+  "name": "arsalan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tailwindcss -i ./src/style.css -o ./src/main.css --watch"
+  },
+  "author": "Arsalan",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
