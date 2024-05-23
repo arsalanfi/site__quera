@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tailwindcss -i ./src/style.css -o ./src/main.css --watch"
+    "test": "npx tailwindcss -i ./src/style.css -o ./src/main.css --watch"
   },
   "author": "Arsalan",
   "license": "ISC",

@@ -617,16 +617,12 @@ h3 {
   top: 60px;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
 .m-6 {
   margin: 1.5rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
 }
 
 .mx-auto {
@@ -646,6 +642,10 @@ h3 {
   display: flex;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -654,8 +654,12 @@ h3 {
   height: auto;
 }
 
-.h-64 {
-  height: 16rem;
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[827px\] {
@@ -666,8 +670,23 @@ h3 {
   width: 100%;
 }
 
-.w-64 {
-  width: 16rem;
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.scale-75 {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-scale-x-50 {
+  --tw-scale-x: -.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -710,16 +729,36 @@ h3 {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-8 {
@@ -730,21 +769,43 @@ h3 {
   gap: 4vw;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-y-4 {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-b-black {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#2C7EF8\] {
@@ -761,9 +822,19 @@ h3 {
   background-color: inherit;
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 126 248 / var(--tw-bg-opacity));
+}
+
 .bg-primary-on-light {
   --tw-bg-opacity: 1;
   background-color: rgb(235 237 239 / var(--tw-bg-opacity));
+}
+
+.bg-primary__back {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -784,6 +855,18 @@ h3 {
   padding: 1rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -792,6 +875,11 @@ h3 {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .px-\[104px\] {
@@ -814,9 +902,30 @@ h3 {
   padding-bottom: 1.5rem;
 }
 
-.py-8 {
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-8 {
   padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -827,13 +936,12 @@ h3 {
   text-align: justify;
 }
 
-.font-body {
-  font-family: Yekan bakh;
+.text-start {
+  text-align: start;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-body {
+  font-family: Yekan bakh;
 }
 
 .text-4xl {
@@ -841,13 +949,33 @@ h3 {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[64px\] {
   font-size: 64px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-black {
@@ -878,6 +1006,15 @@ h3 {
   line-height: 82.8px;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-\[\#070D31\] {
+  --tw-text-opacity: 1;
+  color: rgb(7 13 49 / var(--tw-text-opacity));
+}
+
 .text-\[\#666666\] {
   --tw-text-opacity: 1;
   color: rgb(102 102 102 / var(--tw-text-opacity));
@@ -891,11 +1028,6 @@ h3 {
 .text-primary-on-light {
   --tw-text-opacity: 1;
   color: rgb(235 237 239 / var(--tw-text-opacity));
-}
-
-.text-primary__back {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 body{
